@@ -1,0 +1,4 @@
+#+title: Common Template
+#+author: Emmet, Ajeeth
+
+This is a template of common system configuration to be included and installed on all profiles.

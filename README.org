@@ -1,0 +1,11 @@
+#+title: NixOS Config
+#+author: Emmet, Ajeeth
+
+
+[[https://github.com/ajeeth/nixos-config][Mirror Repo Link (GitHub)]]
+
+** What is this repository?
+This is my personal nixos-configs. 
+Most of it has been heavily inspired by librephoenix's excellent [work](https://github.com/librephoenix/nixos-config) and [tutorials](https://www.youtube.com/playlist?list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG). 
+
+
