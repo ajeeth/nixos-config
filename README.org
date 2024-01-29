@@ -6,6 +6,6 @@
 
 ** What is this repository?
 This is my personal nixos-configs. 
-Most of it has been heavily inspired by librephoenix's excellent [[https://github.com/librephoenix/nixos-config][work]] and [[https://www.youtube.com/playlist?list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG[tutorials]]. 
+Most of it has been heavily inspired by librephoenix's excellent [[https://github.com/librephoenix/nixos-config][work]] and [[https://www.youtube.com/playlist?list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG][tutorials]]. 
 
 
