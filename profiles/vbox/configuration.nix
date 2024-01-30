@@ -9,9 +9,6 @@
       ../../system/style/stylix.nix
     ];
 
-  # Kernel modules
-  #boot.kernelModules = [ "i2c-dev" "i2c-piix4" ];
-
   fonts.fontDir.enable = true;
 
   xdg.portal = {
