@@ -1,0 +1,4 @@
+#+title: VBox Template
+#+author: Ajeeth
+
+This is a template system and user configuration to be installed for a VirtualBox VM.
