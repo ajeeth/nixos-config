@@ -16,7 +16,6 @@
     htop
     hwinfo
     unzip
-    octave
     brightnessctl
     w3m
     fzf
