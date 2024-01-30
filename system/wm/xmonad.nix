@@ -3,6 +3,7 @@
 {
   # import X11 config
   imports = [ ./x11.nix
+              ./lightdm.nix
               ./pipewire.nix
               ./dbus.nix
             ];
