@@ -72,7 +72,7 @@
   # use bash
   environment.shells = with pkgs; [ bash ];
   users.defaultUserShell = pkgs.bash;
-  programs.bash.enable = true;
+  #programs.bash.enable = true; #no longer required
 
   # It is ok to leave this unchanged for compatibility purposes
   system.stateVersion = "23.11";
