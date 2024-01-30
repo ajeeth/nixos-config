@@ -1,23 +1,22 @@
-{ config, pkgs, stylix, userSettings, ... }:
+{ config, pkgs, userSettings, ... }:
 
 {
   imports = [
               ../common/home.nix
-              stylix.homeManagerModules.stylix
+              #stylix.homeManagerModules.stylix
               (./. + "../../../user/wm"+("/"+userSettings.wm+"/"+userSettings.wm)+".nix") # My window manager selected from flake
               ../../user/shell/cli-collection.nix # Useful CLI apps
               (./. + "../../../user/app/browser"+("/"+userSettings.browser)+".nix") # My default browser selected from flake
               ../../user/app/flatpak/flatpak.nix # Flatpaks
-              ../../user/style/stylix.nix # Styling and themes for my apps
+              #../../user/style/stylix.nix # Styling and themes for my apps
               ../../user/lang/cc/cc.nix # C and C++ tools
             ];
 
   home.packages = with pkgs; [
     # Core
     alacritty
-    librewolf
+    floorp
     brave
-    qutebrowser
     dmenu
     rofi
     syncthing
@@ -25,10 +24,6 @@
     # Office
     libreoffice-fresh
     mate.atril
-    gnome.nautilus
-    gnome.gnome-calendar
-    gnome.seahorse
-    gnome.gnome-maps
     texliveSmall
 
     # Media
