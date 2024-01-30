@@ -18,12 +18,10 @@
     firefox
     brave
     dmenu
-    syncthing
 
     # Office
     libreoffice-fresh
     mate.atril
-    texliveSmall
 
     # Media
     gimp-with-plugins
@@ -31,15 +29,8 @@
     mpv
     ffmpeg
     movit
-    mediainfo
-    libmediainfo
-    mediainfo-gui
     audio-recorder
 
-    # Various dev packages
-    texinfo
-    libffi zlib
-    nodePackages.ungit
   ];
 
   xdg.enable = true;
