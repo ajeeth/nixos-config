@@ -26,16 +26,14 @@
       kgpg
       kmplot
       labplot
-      qttools
-      quazip
       syncthingtray
       tokodon
       wacomtablet
 
       # integration
-      kaccounts-integration
-      kaccounts-providers
-      kio-gdrive
+      #libsForQt5.kaccounts-integration
+      #libsForQt5.kaccounts-providers
+      #libsForQt5.kio-gdrive
     ];
   };
 }
