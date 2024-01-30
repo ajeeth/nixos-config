@@ -4,6 +4,7 @@
 ** Install Notes
 To get this running on a NixOS system, start by cloning the repo:
 #+BEGIN_SRC sh :noeval
+nix-env -iA nixos.git
 git clone https://gitlab.com/ajeeth/nixos-config.git ~/.dotfiles
 #+END_SRC
 
