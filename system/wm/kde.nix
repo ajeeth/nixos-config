@@ -14,7 +14,7 @@
       # tools
       akonadi
       ark
-      dragon
+      #dragon
       filelight
       kate
       kcalc
@@ -26,9 +26,9 @@
       kgpg
       kmplot
       labplot
-      syncthingtray
-      tokodon
-      wacomtablet
+      #syncthingtray
+      #tokodon
+      #wacomtablet
 
       # integration
       #libsForQt5.kaccounts-integration
