@@ -8,7 +8,7 @@
     systemSettings = {
       system = "x86_64-linux"; # system arch
       hostname = "naradan"; # hostname
-      profile = "personal"; # select a profile defined from profiles directory
+      profile = "vbox"; # select a profile defined from profiles directory
       timezone = "Asia/Dubai"; # select timezone
       locale = "en_US.UTF-8"; # select locale
     };
@@ -19,7 +19,7 @@
       name = "Ajeeth"; # name/identifier
       email = "ajeeth@devnullmail.com"; # email (used for certain configurations)
       dotfilesDir = "~/.dotfiles"; # absolute path of the local repo
-      theme = "ember"; # selcted theme from my themes directory (./themes/)
+      theme = "uwunicorn-yt"; # selcted theme from my themes directory (./themes/)
       wm = "hyprland"; # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
       # window manager type (hyprland or x11) translator
       wmType = if (wm == "hyprland") then "wayland" else "x11";
