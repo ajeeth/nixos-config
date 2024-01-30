@@ -17,4 +17,12 @@
       touchpad.disableWhileTyping = true;
     };
   };
+
+  environment = {
+    systemPackages = with pkgs; [
+      clinfo
+      glxinfo
+      wayland-utils
+    ];
+  };
 }
