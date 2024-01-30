@@ -16,7 +16,6 @@
       ark
       dragon
       filelight
-      kamoso
       kate
       kcalc
       #kdenlive
