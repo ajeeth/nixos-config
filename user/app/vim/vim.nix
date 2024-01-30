@@ -6,6 +6,10 @@
     settings = { ignorecase = true; };
     extraConfig = ''
       set mouse-=a
+      syntax enable
+      set smartcase
+      set autoindent
+      set number
     '';
   };
 }
