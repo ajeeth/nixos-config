@@ -15,10 +15,9 @@
   home.packages = with pkgs; [
     # Core
     alacritty
-    floorp
+    firefox
     brave
     dmenu
-    rofi
     syncthing
 
     # Office
