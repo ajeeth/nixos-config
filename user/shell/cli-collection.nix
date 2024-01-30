@@ -25,7 +25,7 @@
     #(pkgs.callPackage ../pkgs/russ.nix { })
     #(pkgs.python3Packages.callPackage ../pkgs/impressive.nix { })
     #(pkgs.callPackage ../pkgs/pokemon-colorscripts.nix { })
-    vim neovim
+    neovim
   ];
 
   imports = [
