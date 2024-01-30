@@ -9,7 +9,6 @@
       syntax enable
       set smartcase
       set autoindent
-      set number
     '';
   };
 }
