@@ -23,7 +23,7 @@
       wm = "kde"; # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
       # window manager type (hyprland or x11) translator
       wmType = if (wm == "hyprland") then "wayland" else "x11";
-      browser = "qutebrowser"; # Default browser; must select one from ./user/app/browser/
+      browser = "floorp"; # Default browser; must select one from ./user/app/browser/
       term = "alacritty"; # Default terminal command;
       font = "Intel One Mono"; # Selected font
       fontPkg = pkgs.intel-one-mono; # Font package
