@@ -29,6 +29,7 @@
   ];
 
   imports = [
+    ../app/vim/vim.nix
     ../bin/phoenix.nix # My nix command wrapper
     ../bin/ytsub-wrappers.nix # My ytsub wrapper
   ];
