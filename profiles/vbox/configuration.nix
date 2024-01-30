@@ -6,7 +6,6 @@
       #../../system/hardware/opengl.nix
       (./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
       ../../system/app/flatpak.nix
-      ../../system/style/stylix.nix
     ];
 
   fonts.fontDir.enable = true;
@@ -18,5 +17,6 @@
       pkgs.xdg-desktop-portal-gtk
     ];
   };
-
+  virtualisation.virtualbox.guest.enable = true;
+  #virtualisation.virtualbox.guest.x11 = true;
 }
