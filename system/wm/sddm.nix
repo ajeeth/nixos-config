@@ -4,7 +4,7 @@
   # Enable SDDM.
   services.xserver.displayManager.sddm = {
     enable = true;
-    theme = "maya";
+    theme = "Breeze";
     settings = {
       Theme = {
         CursorTheme = "breeze_cursors";
