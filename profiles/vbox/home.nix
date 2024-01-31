@@ -11,6 +11,7 @@
               #../../user/style/stylix.nix # Styling and themes for my apps
               ../../user/lang/cc/cc.nix # C and C++ tools
               ../../user/app/ssh/ssh.nix
+              ../../user/app/browser/chromium.nix
             ];
 
   home.packages = with pkgs; [
