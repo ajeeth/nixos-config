@@ -8,6 +8,10 @@
   programs.plasma = {
     enable = true;
     workspace = {
+      clickItemTo = "select";
+      lookAndFeel = "org.kde.breezedark.desktop";
+      cursorTheme = "Breeze";
+      iconTheme = "Breeze-Dark";
       wallpaper = "${pkgs.libsForQt5.plasma-workspace-wallpapers}/share/wallpapers/Opal/contents/images/3840x2160.png";
     };
     shortcuts = {
