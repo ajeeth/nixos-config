@@ -3,15 +3,14 @@
   programs.chromium = {
     enable = true;
     extensions = [
-      "cbnipbdpgcncaghphljjicfgmkonflee" # Axel Springer Blocker
       "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock Origin
-      "hjdoplcnndgiblooccencgcggcoihigg" # Terms of Service; Didn’t Read
+      #"hjdoplcnndgiblooccencgcggcoihigg" # Terms of Service; Didn’t Read
       #"gcbommkclmclpchllfjekcdonpmejbdp" # HTTPS Everywhere
-      "klbibkeccnjlkjkiokjodocebajanakg" # The Great Suspender
+      #"klbibkeccnjlkjkiokjodocebajanakg" # The Great Suspender
       #"fngmhnnpilhplaeedifhccceomclgfbg" # EditThisCookie
       "oboonakemofpalcgghocfoadofidjkkk" # KeePassXC-Browser
       "fploionmjgeclbkemipmkogoaohcdbig" # Page load time
-      "feeoiklfggbaibpdhkkngbpkppdmcjal" # Tab Counter
+      #"feeoiklfggbaibpdhkkngbpkppdmcjal" # Tab Counter
       #"kglhbbefdnlheedjiejgomgmfplipfeb" # Jitsi Meetings
     ];
     extraOpts = {
