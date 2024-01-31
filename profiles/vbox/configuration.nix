@@ -6,6 +6,7 @@
       #../../system/hardware/opengl.nix
       (./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
       ../../system/app/flatpak.nix
+      ../../system/app/chromium.nix
     ];
 
   fonts.fontDir.enable = true;
