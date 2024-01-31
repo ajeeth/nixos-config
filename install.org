@@ -5,7 +5,7 @@
 To get this running on a NixOS system, start by cloning the repo:
 #+BEGIN_SRC sh :noeval
 nix-env -iA nixos.git
-git clone https://gitlab.com/ajeeth/nixos-config.git ~/.dotfiles
+git clone https://github.com/ajeeth/nixos-config.git ~/.dotfiles
 #+END_SRC
 
 To get the hardware configuration on a new system, either copy from =/etc/nixos/hardware-configuration.nix= or run:
