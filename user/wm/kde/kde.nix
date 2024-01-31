@@ -7,6 +7,9 @@
 {
   programs.plasma = {
     enable = true;
+    workspace = {
+      wallpaper = "${pkgs.libsForQt5.plasma-workspace-wallpapers}/share/wallpapers/Opal/contents/images/3840x2160.png";
+    };
     shortcuts = {
       "ActivityManager"."switch-to-activity-f40a9a8b-61a9-44e6-8870-2ec22c97df05" = [ ];
       "KDE Keyboard Layout Switcher"."Switch to Next Keyboard Layout" = "Meta+Alt+K";
