@@ -894,7 +894,6 @@
       "plasma-localerc"."Formats"."LC_MONETARY" = "en_AE.UTF-8";
       "plasma-localerc"."Formats"."LC_PAPER" = "en_AE.UTF-8";
       "plasma-localerc"."Formats"."LC_TIME" = "en_AE.UTF-8";
-      "plasmarc"."Wallpapers"."usersWallpapers" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."ActionPlugins.0"."RightButton;NoModifier" = "org.kde.contextmenu";
       "plasma-org.kde.plasma.desktop-appletsrc"."ActionPlugins.0"."wheel:Vertical;NoModifier" = "org.kde.switchdesktop";
       "plasma-org.kde.plasma.desktop-appletsrc"."ActionPlugins.1"."RightButton;NoModifier" = "org.kde.contextmenu";
