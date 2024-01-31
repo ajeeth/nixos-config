@@ -14,6 +14,18 @@
                   "/nix/var/nix/profiles/per-user/root/channels"
                 ];
 
+  # Nix Package Manager optimization
+  nix = {                                               
+    settings ={
+      auto-optimise-store = true;
+    };
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 30d";
+    };
+  };
+
   # Ensure nix flakes are enabled
   nix.package = pkgs.nixFlakes;
   nix.extraOptions = ''
