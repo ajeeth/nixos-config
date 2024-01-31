@@ -71,16 +71,20 @@
           modules = [ (./. + "/profiles"+("/"+systemSettings.profile)+"/home.nix") # load home.nix from selected PROFILE
                     #  inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks
                     ];
+
+          # Ensure Plasma Manager is available:
+          extraModules = [
+            inputs.plasma-manager.homeManagerModules.plasma-manager
+          ];
+
           extraSpecialArgs = {
             # pass config variables from above
             inherit pkgs-stable;
             inherit systemSettings;
             inherit userSettings;
-            inherit inputs;
             #inherit (inputs) nix-flatpak;
             inherit (inputs) stylix;
             inherit (inputs) hyprland-plugins;
-            inherit (inputs) plasma-manager;
           };
       };
     };
