@@ -1,6 +1,8 @@
 #
 #  KDE Plasma 5 Configuration
 #  Get the plasma configs in a file with $ nix run github:pjones/plasma-manager > <file>
+#  Use this instead to get pinned apps from task manager and other stuff. 
+#  $ nix run github:mcdonc/plasma-manager/enable-look-and-feel-settings > <file>
 
 { config, lib, pkgs, inputs, userSettings, plasma-manager, ... }:
 
