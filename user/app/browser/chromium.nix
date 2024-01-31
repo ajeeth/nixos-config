@@ -19,13 +19,13 @@
       "SyncDisabled" = true;
       "PasswordManagerEnabled" = true;
       "BuiltInDnsClientEnabled" = false;
-      "​DeviceMetricsReportingEnabled" = false;
-      "​ReportDeviceCrashReportInfo" = true;
-      "​SpellcheckEnabled" = true;
-      "​SpellcheckLanguage" = [
+      "DeviceMetricsReportingEnabled" = false;
+      "ReportDeviceCrashReportInfo" = true;
+      "SpellcheckEnabled" = true;
+      "SpellcheckLanguage" = [
         "en-US"
       ];
-      "​CloudPrintSubmitEnabled" = false;
+      "CloudPrintSubmitEnabled" = false;
     };
   };
 }
