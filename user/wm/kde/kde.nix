@@ -9,9 +9,9 @@
     enable = true;
     workspace = {
       clickItemTo = "select";
-      lookAndFeel = "org.kde.breezedark.desktop";
+      lookAndFeel = "org.kde.breeze.desktop";
       cursorTheme = "Breeze";
-      iconTheme = "Breeze-Dark";
+      iconTheme = "Breeze";
       wallpaper = "${pkgs.libsForQt5.plasma-workspace-wallpapers}/share/wallpapers/Opal/contents/images/3840x2160.png";
     };
     shortcuts = {
