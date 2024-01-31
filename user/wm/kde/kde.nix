@@ -2,7 +2,7 @@
 #  KDE Plasma 5 Configuration
 #  Get the plasma configs in a file with $ nix run github:pjones/plasma-manager > <file>
 
-{ config, lib, pkgs, userSettings, plasma-manager, ... }:
+{ config, lib, pkgs, inputs, userSettings, plasma-manager, ... }:
 
 {
   home-manager.users.${userSettings.username} = {
