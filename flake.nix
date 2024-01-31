@@ -2,7 +2,7 @@
   description = "Better than corn flakes";
 
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix,
-              blocklist-hosts, rust-overlay, hyprland-plugins, ... }@inputs:
+              blocklist-hosts, rust-overlay, hyprland-plugins, plasma-manager, ... }@inputs:
   let
     # ---- SYSTEM SETTINGS ---- #
     systemSettings = {
@@ -124,6 +124,8 @@
       
     plasma-manager = {                                                    # KDE Plasma User Settings Generator
       url = "github:pjones/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
     };
   };
 }
