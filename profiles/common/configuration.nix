@@ -39,6 +39,7 @@
   boot.kernelModules = [ "i2c-dev" "i2c-piix4" ];
 
   # Bootloader
+  boot.loader.timeout = 2;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   #boot.loader.efi.efiSysMountPoint = "/boot/efi";
