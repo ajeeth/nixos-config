@@ -7,6 +7,7 @@
       (./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
       ../../system/app/flatpak.nix
       ../../system/app/chromium.nix
+      ../../system/fonts/fonts.nix;
     ];
 
   fonts.fontDir.enable = true;
