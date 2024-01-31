@@ -76,6 +76,7 @@
             inherit pkgs-stable;
             inherit systemSettings;
             inherit userSettings;
+            inherit inputs;
             #inherit (inputs) nix-flatpak;
             inherit (inputs) stylix;
             inherit (inputs) hyprland-plugins;
