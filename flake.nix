@@ -17,7 +17,7 @@
     userSettings = rec {
       username = "ajeeth"; # username
       name = "Ajeeth"; # name/identifier
-      email = "ajeeth@devnullmail.com"; # email (used for certain configurations)
+      email = "ajeeth.samuel@gmail.com"; # email (used for certain configurations)
       dotfilesDir = "~/.dotfiles"; # absolute path of the local repo
       theme = "uwunicorn"; # selcted theme from my themes directory (./themes/)
       wm = "kde"; # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
