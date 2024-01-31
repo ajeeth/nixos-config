@@ -79,6 +79,7 @@
             #inherit (inputs) nix-flatpak;
             inherit (inputs) stylix;
             inherit (inputs) hyprland-plugins;
+            inherit (inputs) plasma-manager;
           };
       };
     };
@@ -118,6 +119,10 @@
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       flake = false;
+    };
+      
+    plasma-manager = {                                                    # KDE Plasma User Settings Generator
+      url = "github:pjones/plasma-manager";
     };
   };
 }
