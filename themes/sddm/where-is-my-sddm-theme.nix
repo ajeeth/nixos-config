@@ -32,5 +32,17 @@ pkgs.stdenv.mkDerivation {
     cd $out/
     #rm Background.jpg
     cp -r ${image} $out/Background.jpg
+    #rm theme.conf and set new conf
+    cat <<EOT > theme.conf
+    [General]
+    passwordCharacter=*
+    passwordFontSize=80
+    sessionsFontSize=24
+    usersFontSize=36
+    background=Background.jpg
+    backgroundFill=#000000
+    backgroundFillMode=aspect
+    cursorColor=random
+    EOT
    '';
 }
