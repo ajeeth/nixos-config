@@ -16,14 +16,14 @@ let
   #imgLink = "https://images.wallpaperscraft.com/image/single/fish_underwater_swim_113827_1600x1200.jpg";
   #imgSha256 = "04hx7s67bz5wxczcxh6zzi2kfvdkfiiy165i6rg09v196651mwsh";
 
-  #imgLink = "https://images.wallpaperscraft.com/image/single/wood_leaves_nature_71206_1600x1200.jpg";
-  #imgSha256 = "13nchm3biclyr0lggpbnz7c9ipzc5s14508087sjs8d41rm7p4mr";
+  imgLink = "https://images.wallpaperscraft.com/image/single/wood_leaves_nature_71206_1600x1200.jpg";
+  imgSha256 = "13nchm3biclyr0lggpbnz7c9ipzc5s14508087sjs8d41rm7p4mr";
 
   #imgLink = "https://images.wallpaperscraft.com/image/single/ocean_beach_aerial_view_134429_1600x1200.jpg";
   #imgSha256 = "1x3miyi9vz3b4hv4cfbhly96l0r19pxd0cci18d9hkmhxa7wg4vl";
 
-  imgLink = "https://images.wallpaperscraft.com/image/single/road_marking_trees_137674_1600x1200.jpg";
-  imgSha256 = "1j9gy7rk9zrzd943aprqsagw05zaa76zkz2z9333ax5xlm1wa99i";
+  #imgLink = "https://images.wallpaperscraft.com/image/single/road_marking_trees_137674_1600x1200.jpg";
+  #imgSha256 = "1j9gy7rk9zrzd943aprqsagw05zaa76zkz2z9333ax5xlm1wa99i";
 
   image = pkgs.fetchurl {
     url = imgLink;
