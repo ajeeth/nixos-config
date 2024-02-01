@@ -47,11 +47,12 @@ pkgs.stdenv.mkDerivation {
     #rm theme.conf and set new conf
     cat <<EOT > theme.conf
     [General]
-    passwordCharacter=*
-    passwordFontSize=60
+    passwordCharacter=-
+    passwordFontSize=40
     sessionsFontSize=18
-    usersFontSize=24
+    usersFontSize=20
     background=Background.jpg
+    backgroundMode=fill
     backgroundFill=#000000
     backgroundFillMode=aspect
     cursorColor=random
