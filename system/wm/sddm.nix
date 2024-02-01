@@ -1,14 +1,9 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   # Enable SDDM.
   services.xserver.displayManager.sddm = {
     enable = true;
-    theme = "breeze";
-    settings = {
-      Theme = {
-        CursorTheme = "breeze_cursors";
-      };
-    };
+    theme = "${import ../../themes/sddm/sddm-sugar-dark-c.nix { inherit pkgs; }}";
   };
 }
