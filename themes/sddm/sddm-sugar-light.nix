@@ -1,3 +1,9 @@
+## use below to retrieve revision and sha256 for theme 
+## $ nix run github:seppeljordan/nix-prefetch-github MarianArlt sddm-sugar-light
+##
+## use below to retrieve sha256 for images
+## nix-prefetch-url "https://images.wallpaperscraft.com/image/single/peacocks_feathers_patterns_118604_1600x1200.jpg"
+
 { pkgs }:
 
 let
