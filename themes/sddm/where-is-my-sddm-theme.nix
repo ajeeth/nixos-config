@@ -48,9 +48,9 @@ pkgs.stdenv.mkDerivation {
     cat <<EOT > theme.conf
     [General]
     passwordCharacter=*
-    passwordFontSize=80
-    sessionsFontSize=24
-    usersFontSize=36
+    passwordFontSize=60
+    sessionsFontSize=18
+    usersFontSize=24
     background=Background.jpg
     backgroundFill=#000000
     backgroundFillMode=aspect
