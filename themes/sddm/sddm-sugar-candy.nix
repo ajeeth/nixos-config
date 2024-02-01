@@ -44,4 +44,5 @@ pkgs.stdenv.mkDerivation {
     cd $out/
     rm Backgrounds/Mountain.jpg
     cp -r ${image} $out/Backgrounds/Mountain.jpg
+  '';
 }
