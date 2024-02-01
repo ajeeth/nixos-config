@@ -6,7 +6,7 @@
     enable = true;
     theme = "${import ../../themes/sddm/where-is-my-sddm-theme.nix { inherit pkgs; }}";
     settings = {
-      InputMethod =
+      InputMethod = "";
     };
   };
 }
