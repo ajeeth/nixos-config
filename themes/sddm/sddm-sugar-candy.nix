@@ -40,7 +40,7 @@ pkgs.stdenv.mkDerivation {
   };
   installPhase = ''
     mkdir -p $out
-    cp -R ./where_is_my_sddm_theme/* $out/
+    cp -R ./* $out/
     cd $out/
     rm Backgrounds/Mountain.jpg
     cp -r ${image} $out/Backgrounds/Mountain.jpg
