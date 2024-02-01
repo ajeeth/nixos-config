@@ -24,7 +24,7 @@ pkgs.stdenv.mkDerivation {
     mkdir -p $out
     cp -R ./* $out/
     cd $out/
-    rm Background.jpg
+    #rm Background.jpg
     cp -r ${image} $out/Background.jpg
    '';
 }
