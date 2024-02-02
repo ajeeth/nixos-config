@@ -1,4 +1,4 @@
-{ config, pkgs, userSettings, inputs, plasma-manager, ... }:
+{ config, pkgs, userSettings, systemSettings, inputs, plasma-manager, agenix, ... }:
 
 {
   imports = [
@@ -10,7 +10,7 @@
               ../../user/app/flatpak/flatpak.nix # Flatpaks
               #../../user/style/stylix.nix # Styling and themes for my apps
               ../../user/lang/cc/cc.nix # C and C++ tools
-              ../../user/app/ssh/ssh.nix
+              #../../user/app/ssh/ssh.nix #testing agenix to supply config file
               ../../user/app/browser/chromium.nix
             ];
 
@@ -60,4 +60,6 @@
     BROWSER = userSettings.browser;
   };
 
+  age.identityPaths = [ "${config.home.homeDirectory}/.ssh/${systemSettings.profile}_${userSettings.username}-id_ed25519" ];
+  age.secrets.ssh_config.file = ./secrets/ssh_config.age;
 }
