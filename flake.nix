@@ -2,7 +2,7 @@
   description = "Better than corn flakes";
 
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix,
-              blocklist-hosts, rust-overlay, hyprland-plugins, plasma-manager, ... }@inputs:
+              blocklist-hosts, rust-overlay, hyprland-plugins, plasma-manager, agenix, ... }@inputs:
   let
     # ---- SYSTEM SETTINGS ---- #
     systemSettings = {
@@ -71,6 +71,7 @@
           modules = [ (./. + "/profiles"+("/"+systemSettings.profile)+"/home.nix") # load home.nix from selected PROFILE
                     # inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks
                       inputs.plasma-manager.homeManagerModules.plasma-manager
+                      inputs.agenix.homeManagerModules.age
                     ];
 
           extraSpecialArgs = {
@@ -79,6 +80,7 @@
             inherit systemSettings;
             inherit userSettings;
             #inherit (inputs) nix-flatpak;
+            inherit (inputs) agenix;
             inherit (inputs) stylix;
             inherit (inputs) hyprland-plugins;
           };
@@ -87,11 +89,15 @@
     nixosConfigurations = {
       system = lib.nixosSystem {
         system = systemSettings.system;
-        modules = [ (./. + "/profiles"+("/"+systemSettings.profile)+"/configuration.nix") ]; # load configuration.nix from selected PROFILE
+        modules = [ 
+          (./. + "/profiles"+("/"+systemSettings.profile)+"/configuration.nix")  # load configuration.nix from selected PROFILE
+          agenix.nixosModules.age
+        ];
         specialArgs = {
           # pass config variables from above
           inherit systemSettings;
           inherit userSettings;
+          inherit (inputs) agenix;
           inherit (inputs) stylix;
           inherit (inputs) blocklist-hosts;
         };
@@ -110,7 +116,13 @@
 
     rust-overlay.url = "github:oxalica/rust-overlay";
 
-    #nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.2.0";
+    inputs.agenix.url = "github:ryantm/agenix";
+
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.darwin.follows = "";
+    }
 
     blocklist-hosts = {
       url = "github:StevenBlack/hosts";
