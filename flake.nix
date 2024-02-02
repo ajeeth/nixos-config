@@ -122,7 +122,7 @@
       url = "github:ryantm/agenix";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.darwin.follows = "";
-    }
+    };
 
     blocklist-hosts = {
       url = "github:StevenBlack/hosts";
