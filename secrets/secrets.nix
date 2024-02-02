@@ -11,7 +11,7 @@ in
 {
   "algo_wg-fr.conf.age".publicKeys = [ vbox job ];
   "alpha.ovpn.age".publicKeys = [ job ];
-  "ssh_config.age".publicKeys = [ helios job ];
+  "ssh_config.age".publicKeys = [ helios job vbox ];
   "primenet.nmconnection.age".publicKeys = [ helios job ];
   "pixel.nmconnection.age".publicKeys = [ helios job ];
   "kwallet.xml.age".publicKeys = [ helios job ];

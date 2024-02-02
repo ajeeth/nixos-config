@@ -61,5 +61,5 @@
   };
 
   age.identityPaths = [ "${config.home.homeDirectory}/.ssh/${systemSettings.profile}_${userSettings.username}-id_ed25519" ];
-  age.secrets.ssh_config.file = ./secrets/ssh_config.age;
+  age.secrets.ssh_config.file = ../../secrets/ssh_config.age;
 }
