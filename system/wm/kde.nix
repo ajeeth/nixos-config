@@ -4,6 +4,7 @@
   # import X11 config
   imports = [ ./x11.nix
               ./sddm.nix
+              ../app/kdeconnect.nix
             ];
 
   # Enable the Plasma 5 Desktop Environment.
