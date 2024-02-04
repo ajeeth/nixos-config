@@ -13,6 +13,7 @@
               ../../user/app/ssh/ssh.nix 
               ../../user/app/keepass/keepass.nix 
               ../../user/app/browser/chromium.nix
+              ../../user/app/nextcloud-client/nextcloud-client.nix
             ];
 
   home.packages = with pkgs; [
