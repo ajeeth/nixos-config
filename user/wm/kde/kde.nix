@@ -8,7 +8,7 @@
 
 {
 
-  imports [
+  imports = [
     ../../app/kate/kate.nix
   ];
 
