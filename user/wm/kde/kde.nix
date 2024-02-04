@@ -7,6 +7,11 @@
 { config, lib, pkgs, inputs, userSettings, plasma-manager, ... }:
 
 {
+
+  imports [
+    ../../app/kate/kate.nix
+  ];
+
   programs.plasma = {
     enable = true;
     workspace = {

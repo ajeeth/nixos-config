@@ -11,7 +11,7 @@
               #../../user/style/stylix.nix # Styling and themes for my apps
               ../../user/lang/cc/cc.nix # C and C++ tools
               ../../user/app/ssh/ssh.nix 
-              ../../user/app/kate/kate.nix 
+              ../../user/app/keepass/keepass.nix 
               ../../user/app/browser/chromium.nix
             ];
 
@@ -34,6 +34,17 @@
     movit
     audio-recorder
 
+    # Misc
+    anki
+    drawio
+    vscode
+    virtualbox
+    microsoft-edge
+    pdfarranger
+    qbittorrent
+    qownnotes
+    remmina
+    thunderbird
   ];
 
   xdg.enable = true;

@@ -25,5 +25,6 @@
   # System packages
   environment.systemPackages = with pkgs; [
     chromium
+    google-chrome
   ];
 }
