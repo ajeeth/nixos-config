@@ -5,22 +5,23 @@
 { lib, pkgs, systemSettings, userSettings, ... }:
 
 with lib;
-let
-  nixos-wsl = import ./nixos-wsl;
-in
+#let
+#  nixos-wsl = import ./nixos-wsl;
+#in
 {
   imports =
-    [ nixos-wsl.nixosModules.wsl
+    [ 
+      #nixos-wsl.nixosModules.wsl
       ../common/configuration.nix
-      ../../system/hardware/kernel.nix # Kernel config
+      #../../system/hardware/kernel.nix # Kernel config
       ../../system/hardware/systemd.nix # systemd config
       ../../system/hardware/opengl.nix
       ../../system/hardware/printing.nix
-      ../../system/hardware/bluetooth.nix
-      ../../system/security/blocklist.nix
-      ../../system/security/firewall.nix
-      ../../system/security/firejail.nix
-      ../../system/style/stylix.nix
+      #../../system/hardware/bluetooth.nix
+      #../../system/security/blocklist.nix
+      #../../system/security/firewall.nix
+      #../../system/security/firejail.nix
+      #../../system/style/stylix.nix
     ];
 
   wsl = {
