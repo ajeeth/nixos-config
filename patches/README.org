@@ -10,4 +10,4 @@ Here is a list of patches in this directory, along with a more detailed descript
 
 | Patch                        | Reason                                                                                       |
 |------------------------------+----------------------------------------------------------------------------------------------|
-| [[./nixos-nixpkgs-268027.patch][nixos-nixpkgs-268027.patch]] | [[https://github.com/NixOS/nixpkgs/tree/master/pkgs/development/interpreters/python/python2/mk-python-derivation.nix]]
+| [[./nixos-nixpkgs-268027.patch][nixos-nixpkgs-268027.patch]] | [[https://github.com/NixOS/nixpkgs/tree/master/pkgs/development/interpreters/python/python2/mk-python-derivation.nix]] (not in use)
