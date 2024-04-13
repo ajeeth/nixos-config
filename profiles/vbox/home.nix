@@ -28,7 +28,7 @@
     mate.atril
 
     # Media
-    gimp-with-plugins
+    gimp ## gimp-with-plugins  ##complie fails 13-04-2024. Retry later
     vlc
     mpv
     ffmpeg
