@@ -2,7 +2,7 @@
   description = "Better than corn flakes";
 
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix,
-              blocklist-hosts, rust-overlay, hyprland-plugins, plasma-manager, agenix, ... }@inputs:
+              blocklist-hosts, hyprland-plugins, plasma-manager, agenix, ... }@inputs:
   let
     # ---- SYSTEM SETTINGS ---- #
     systemSettings = {
@@ -37,28 +37,26 @@
     };
 
 
-    # create patched nixpkgs
-    nixpkgs-patched = (import nixpkgs { system = systemSettings.system; }).applyPatches {
-      name = "nixpkgs-patched";
-      src = nixpkgs;
-      patches = [
-                  ./patches/nixos-nixpkgs-268027.patch
-                ];
-    };
+    ### create patched nixpkgs
+    ##nixpkgs-patched = (import nixpkgs { system = systemSettings.system; }).applyPatches {
+    ##  name = "nixpkgs-patched";
+    ##  src = nixpkgs;
+    ##  patches = [
+    ##              ./patches/nixos-nixpkgs-268027.patch
+    ##            ];
+    ##};
 
     # configure pkgs
-    pkgs = import nixpkgs-patched {
+    pkgs = import nixpkgs {
       system = systemSettings.system;
       config = { allowUnfree = true;
                  allowUnfreePredicate = (_: true); };
-      overlays = [ rust-overlay.overlays.default ];
     };
 
     pkgs-stable = import nixpkgs-stable {
       system = systemSettings.system;
       config = { allowUnfree = true;
                  allowUnfreePredicate = (_: true); };
-      overlays = [ rust-overlay.overlays.default ];
     };
 
     # configure lib
@@ -113,8 +111,6 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:danth/stylix";
-
-    rust-overlay.url = "github:oxalica/rust-overlay";
 
     agenix = {
       url = "github:ryantm/agenix";
