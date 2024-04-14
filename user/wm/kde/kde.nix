@@ -283,6 +283,7 @@
       "dolphinrc"."KFileDialog Settings"."Places Icons Auto-resize".value = false;
       "dolphinrc"."KFileDialog Settings"."Places Icons Static Size".value = 22;
       "dolphinrc"."PreviewSettings"."Plugins".value = "audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs";
+      "kactivitymanagerdrc"."activities"."1dcce505-27de-49de-bca0-0da5e4ca4227".value = "Default";
       "kactivitymanagerdrc"."activities"."f40a9a8b-61a9-44e6-8870-2ec22c97df05".value = "Default";
       "kactivitymanagerdrc"."main"."currentActivity".value = "f40a9a8b-61a9-44e6-8870-2ec22c97df05";
       "kcminputrc"."Mouse"."X11LibInputXAccelProfileFlat".value = true;
@@ -870,8 +871,8 @@
       "kiorc"."Confirmations"."ConfirmEmptyTrash".value = true;
       "kiorc"."Confirmations"."ConfirmTrash".value = false;
       "kiorc"."Executable scripts"."behaviourOnLaunch".value = "alwaysAsk";
-      "kscreenlockerrc"."Greeter/Wallpaper/org.kde.image/General"."Image".value = "/nix/store/i0vcjfygq43kf3z8ar6jvigx3xsj1ynw-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Opal/";
-      "kscreenlockerrc"."Greeter/Wallpaper/org.kde.image/General"."PreviewImage".value = "/nix/store/i0vcjfygq43kf3z8ar6jvigx3xsj1ynw-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Opal/";
+      "kscreenlockerrc"."Greeter/Wallpaper/org.kde.image/General"."Image".value = "/nix/store/0b8nvil8davlhmd2dmy6fkjsgp5plyg6-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Opal/";
+      "kscreenlockerrc"."Greeter/Wallpaper/org.kde.image/General"."PreviewImage".value = "/nix/store/0b8nvil8davlhmd2dmy6fkjsgp5plyg6-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Opal/";
       "kscreenlockerrc"."Greeter/Wallpaper/org/kde/image/General"."Image".value = "/nix/store/i0vcjfygq43kf3z8ar6jvigx3xsj1ynw-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Opal/";
       "kscreenlockerrc"."Greeter/Wallpaper/org/kde/image/General"."PreviewImage".value = "/nix/store/i0vcjfygq43kf3z8ar6jvigx3xsj1ynw-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Opal/";
       "kservicemenurc"."Show"."KGetDownload".value = true;
@@ -895,6 +896,7 @@
       "kwinrc"."Desktops"."Number".value = 1;
       "kwinrc"."Desktops"."Rows".value = 1;
       "kwinrc"."Tiling"."padding".value = 4;
+      "kwinrc"."Tiling/285712a6-31d1-5e3a-95e8-b6f4629caf9f"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/4c85f5bb-4dcb-5bec-8433-5c0e6860d679"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/75ed573d-6eee-5e00-a7c4-c7589c8df991"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Xwayland"."Scale".value = 1;
