@@ -27,7 +27,8 @@
   };
 
   # Ensure nix flakes are enabled
-  nix.package = pkgs.nixFlakes;
+  #nix.package = pkgs.nixFlakes;
+  nix.package = pkgs.nixVersions.stable;
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
@@ -92,6 +93,6 @@
   #programs.bash.enable = true; #no longer required
 
   # It is ok to leave this unchanged for compatibility purposes
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.11";
 
 }
