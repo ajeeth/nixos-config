@@ -17,7 +17,7 @@
     workspace = {
       clickItemTo = "select";
       lookAndFeel = "org.kde.breeze.desktop";
-      cursorTheme = "Breeze";
+      cursor.theme = "Breeze";
       iconTheme = "Breeze";
       wallpaper = "${pkgs.libsForQt5.plasma-workspace-wallpapers}/share/wallpapers/Opal/contents/images/3840x2160.png";
     };
