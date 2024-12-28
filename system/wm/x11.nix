@@ -13,10 +13,9 @@
     xkb.variant = "";
     xkb. options = "caps:escape";
     excludePackages = [ pkgs.xterm ];
-    libinput = {
-      touchpad.disableWhileTyping = true;
-    };
   };
+
+  services.libinput.touchpad.disableWhileTyping = true;
 
   environment = {
     systemPackages = with pkgs; [
