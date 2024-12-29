@@ -23,7 +23,7 @@ sudo nixos-rebuild switch --flake .#system
 
 Home manager can be installed with:
 #+BEGIN_SRC sh :noeval
-nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+nix-channel --add https://github.com/nix-community/home-manager/archive/release-24.11.tar.gz home-manager
 nix-channel --update
 nix-shell '<home-manager>' -A install
 #+END_SRC
