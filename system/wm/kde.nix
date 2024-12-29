@@ -25,8 +25,8 @@
       kfind
       kget
       kgpg
-      kmplot
-      labplot
+      #kmplot
+      #labplot
       #syncthingtray
       #tokodon
       #wacomtablet
