@@ -53,7 +53,9 @@
   time.timeZone = systemSettings.timezone; # time zone
   i18n.defaultLocale = systemSettings.locale;
   i18n.extraLocaleSettings = {
+    LC_ALL = systemSettings.locale;
     LC_ADDRESS = systemSettings.locale;
+    LC_CTYPE = systemSettings.locale;
     LC_IDENTIFICATION = systemSettings.locale;
     LC_MEASUREMENT = systemSettings.locale;
     LC_MONETARY = systemSettings.locale;
