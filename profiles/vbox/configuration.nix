@@ -5,6 +5,7 @@
       ../../system/hardware/systemd.nix # systemd config
       #../../system/hardware/opengl.nix
       (./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
+      ../../system/security/sshd.nix
       ../../system/app/flatpak.nix
       ../../system/app/chromium.nix
       ../../system/fonts/fonts.nix
