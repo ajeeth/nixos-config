@@ -4,7 +4,7 @@
   # Fonts are nice to have
   fonts.packages = with pkgs; [
     # Fonts
-    nerd-fonts.inconsolata
+    (nerdfonts.override { fonts = [ "Inconsolata" ]; })
     powerline
     inconsolata
     iosevka
