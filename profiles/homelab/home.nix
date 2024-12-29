@@ -1,4 +1,4 @@
-{ config, pkgs, userSettings, systemSettings, ... }:
+{ config, pkgs, userSettings, systemSettings, agenix, ... }:
 
 {
   imports = [
