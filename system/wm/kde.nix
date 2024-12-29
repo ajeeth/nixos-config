@@ -10,6 +10,9 @@
   # Enable the Plasma 5 Desktop Environment.
   services.xserver.desktopManager.plasma5.enable = true;
 
+  # Enable KDE Partition Manager
+  programs.partition-manager.enable = true;
+
   environment = {
     systemPackages = with pkgs; [
       # tools
