@@ -11,10 +11,10 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    rclone
-    rdiff-backup
-    gocryptfs
-    cryfs
+    #rclone
+    #rdiff-backup
+    #gocryptfs
+    #cryfs
   ];
 
 }
