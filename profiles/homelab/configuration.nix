@@ -5,7 +5,7 @@
     [ ../common/configuration.nix
       ../../system/hardware/systemd.nix # systemd config
       ../../system/security/sshd.nix
-      ( import ../../system/app/docker.nix {storageDriver = "btrfs"; inherit userSettings pkgs lib;} )
+      ( import ../../system/app/docker.nix {inherit userSettings pkgs lib;} )
     ];
 
 
