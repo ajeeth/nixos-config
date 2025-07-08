@@ -7,8 +7,8 @@
     # ---- SYSTEM SETTINGS ---- #
     systemSettings = {
       system = "x86_64-linux"; # system arch
-      hostname = "naradan"; # hostname
-      profile = "vbox"; # select a profile defined from profiles directory
+      hostname = "helios"; # hostname
+      profile = "homelab"; # select a profile defined from profiles directory
       timezone = "Asia/Dubai"; # select timezone
       locale = "en_US.UTF-8"; # select locale
     };
@@ -104,10 +104,10 @@
   };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-    nixpkgs-stable.url = "nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs-stable.url = "nixpkgs/nixos-25.05";
 
-    home-manager.url = "github:nix-community/home-manager/release-24.11";
+    home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:danth/stylix";
